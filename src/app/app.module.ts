@@ -15,7 +15,6 @@ const rutas: Routes = [
   {path: 'listarproyecto', component: ListarproyectoComponent},
   {path: 'crearproyecto', component: CrearproyectoComponent},
   {path: 'crearproyecto/:id', component: CrearproyectoComponent},
-  { path: '', redirectTo: '/clientes', pathMatch: 'full' },
   { path: 'proyectos/page/:page', component: ListarproyectoComponent },
 
 ];
