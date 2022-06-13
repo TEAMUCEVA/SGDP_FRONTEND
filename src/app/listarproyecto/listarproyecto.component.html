@@ -38,8 +38,8 @@
               <td>Esto es un archivo</td>
               <td style="width: 13%">
                 <ul class="action-list" style="margin-left: -8%; margin-top: -2%; margin-bottom: -5%" >
-                  <li><a href="#" class="btn" (click)='borrarProyecto(proyecto)' style="margin-right: 7px"><em class="fa fa-trash"></em></a></li>
-                  <li><a href="#" class="btn" [routerLink]="['/crearproyecto', proyecto.id]" ><em class="fa fa-edit"></em></a></li>
+                  <li><a class="btn" (click)='borrarProyecto(proyecto)' style="margin-right: 7px"><em class="fa fa-trash"></em></a></li>
+                  <li><a class="btn" [routerLink]="['/crearproyecto', proyecto.id]" ><em class="fa fa-edit"></em></a></li>
                 </ul>
               </td>
             </tr>

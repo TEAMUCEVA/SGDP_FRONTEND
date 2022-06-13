@@ -9,7 +9,7 @@ import swal from "sweetalert2";
   providedIn: 'root'
 })
 export class ProyectoService {
-  private urlEndPoint: string = 'http://localhost:8080/proyecto_service/proyectos';
+  private urlEndPoint: string = 'http://54.157.207.170:8080/proyecto_service/proyectos';
   private httpHeaders = new HttpHeaders({'Content-Type':'application/json'});
   constructor(private httpClient: HttpClient, private router: Router) {}
 

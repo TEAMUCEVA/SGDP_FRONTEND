@@ -50,7 +50,9 @@ export class ListarproyectoComponent implements OnInit {
       cancelButtonText: 'No, cancelar!',
       reverseButtons: true
     }).then((result) => {
-      if (result.value) {
+      console.log("fuera")
+      if (result.isConfirmed) {
+        console.log("entro if")
         this.proyectoService.borrarProyecto(proyecto.id).subscribe(
           () => {
             this.proyectos = this.proyectos.filter(cli => cli !== proyecto)
