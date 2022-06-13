@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import { ListarproyectoComponent } from './listarproyecto/listarproyecto.component';
 import { CrearproyectoComponent } from './crearproyecto/crearproyecto.component';
 import { HttpClientModule } from '@angular/common/http';
-import {RouterModule, Routes} from "@angular/router";
 import { FormsModule } from '@angular/forms';
 import {ProyectoService} from "./listarproyecto/proyecto.service";
 import {PaginatorComponent} from "./paginator/paginator.component";
@@ -15,7 +14,7 @@ import {RouterModule, Routes} from "@angular/router";
 
 const rutas: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
-  {path: 'contacto', component: ContactComponent}
+  {path: 'contacto', component: ContactComponent},
   {path: 'listarproyecto', component: ListarproyectoComponent},
   {path: 'crearproyecto', component: CrearproyectoComponent},
   {path: 'crearproyecto/:id', component: CrearproyectoComponent},
@@ -26,19 +25,18 @@ const rutas: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-  imports: [
     HeaderComponent,
     ContactComponent,
     FooterComponent,
     ListarproyectoComponent,
     CrearproyectoComponent,
-    PaginatorComponent
-  ],
+    PaginatorComponent,
+],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(rutas),
+    RouterModule.forRoot(rutas)
   ],
   providers: [ProyectoService],
   bootstrap: [AppComponent]

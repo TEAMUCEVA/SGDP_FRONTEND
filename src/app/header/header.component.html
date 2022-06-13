@@ -13,16 +13,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Inicio</a>
-          <a href="#" class="nav-item nav-link">Proyectos</a>
+          <a  class="nav-item nav-link active">Inicio</a>
+          <a [routerLink]="['/listarproyecto']" class="nav-item nav-link">Proyectos</a>
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gestionar</a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Proyectos</a>
-              <a href="#" class="dropdown-item">Asignaturas</a>
-              <a href="#" class="dropdown-item">Autores</a>
-              <a href="#" class="dropdown-item">Programas académicos</a>
-              <a href="#" class="dropdown-item">Facultades</a>
+              <a [routerLink]="['/listarproyecto']" class="dropdown-item">Proyectos</a>
+              <a class="dropdown-item">Asignaturas</a>
+              <a class="dropdown-item">Autores</a>
+              <a class="dropdown-item">Programas académicos</a>
+              <a class="dropdown-item">Facultades</a>
             </div>
 
           </div>
